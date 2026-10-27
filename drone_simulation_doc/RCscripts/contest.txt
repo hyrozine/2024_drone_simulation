@@ -1,0 +1,26 @@
+killall -9 gzserver
+killall -9 gzclient
+
+source ~/ROBOCUP2023/buptcReam/catkin_ws/devel/setup.bash
+roslaunch darknet_ros darknet_robocup.launch
+
+cd ~/ROBOCUP2023/buptcReam/RCscripts
+bash multi_gimbal_control.sh
+
+python3 Tracer.py
+
+bash yolo_human_tracking.sh
+
+python autoTakeoff.py ;
+
+python start_search.py
+结束
+
+
+要是yolo_human_tracking.sh死了就一步步
+python3 yolo_human_tracking.py typhoon_h480 0 ;
+python3 yolo_human_tracking.py typhoon_h480 1 ;
+python3 yolo_human_tracking.py typhoon_h480 2 ;
+python3 yolo_human_tracking.py typhoon_h480 3 ;
+python3 yolo_human_tracking.py typhoon_h480 4 ;
+python3 yolo_human_tracking.py typhoon_h480 5 ;

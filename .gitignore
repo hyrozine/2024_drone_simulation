@@ -1,0 +1,17 @@
+﻿# ---- build / runtime artifacts ----
+build/
+devel/
+install/
+logs/
+log/
+__pycache__/
+*.pyc
+*.pyo
+*.o
+*.so
+*.a
+.DS_Store
+Thumbs.db
+
+# ---- nested .git containers moved aside during import ----
+.git-offsite/

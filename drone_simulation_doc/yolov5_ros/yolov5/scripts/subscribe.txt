@@ -1,0 +1,6 @@
+/typhoon_h480_0/realsense/depth_camera/color/image_raw
+/typhoon_h480_1/realsense/depth_camera/color/image_raw
+/typhoon_h480_2/realsense/depth_camera/color/image_raw
+/typhoon_h480_3/realsense/depth_camera/color/image_raw
+/typhoon_h480_4/realsense/depth_camera/color/image_raw
+/typhoon_h480_5/realsense/depth_camera/color/image_raw

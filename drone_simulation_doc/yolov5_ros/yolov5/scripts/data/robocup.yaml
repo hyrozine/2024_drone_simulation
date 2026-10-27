@@ -1,0 +1,16 @@
+
+nc: 6
+path: data/cup_actors
+test: test.txt
+train: train.txt
+val: val.txt
+names: [ 'actor_red' ,
+         'actor_blue', 
+         'actor_gray',
+         'actor_brown', 
+         'actor_green',
+         'walker']
+
+# Usage: 
+#    $ nohup python train.py --data robocup.yaml --weights yolov5s.pt --img 640 --device 0 --epochs 600 --batch-size 64 --patience 600 > logs/log_newblock_0316.txt 2>&1 &
+#    $ nohup python train.py --data robocup.yaml --weights yolov5l.pt --img 640 --device 0 --epochs 250 --batch-size 32 --patience 20 > logs/log_newblock_0316.txt 2>&1 &

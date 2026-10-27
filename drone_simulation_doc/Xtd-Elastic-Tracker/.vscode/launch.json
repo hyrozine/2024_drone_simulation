@@ -1,0 +1,32 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ROS: Launch",
+            "request": "launch",
+            "target": "/home/xdjf/Elastic-Tracker/src/detection/target_ekf/launch/target_ekf.launch",
+            "launch": [
+                "rviz",
+                // "gz",
+                // "gzclient",
+                // "gzserver"
+            ],
+            "type": "ros"
+        },
+        {
+            "name": "ROS: Launch tracker",
+            "request": "launch",
+            "target": "/home/xdjf/Elastic-Tracker/src/planning/planning/launch/typhoon.launch",
+            "launch": [
+                "rviz",
+                // "gz",
+                // "gzclient",
+                // "gzserver"
+            ],
+            "type": "ros"
+        }
+    ]
+}
